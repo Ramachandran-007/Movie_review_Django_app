@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        *{
+            color: white;
+        }
+        body {
+            margin: 20px;
+            background-color: black;
+        }
+        
+        .header {
+            text-align: center;
+        }
+
+        .movie-story{
+            display: flex;
+            justify-content: center;
+        }
+        .split {
+            display: flex;
+            width: 100%; /* Full width container for both left and right */
+          }
+        .poster, .story {
+            flex: content; /* Equal width for both sides */
+            padding: 20px;
+        }
+        .story{
+            margin-top: 70px;
+        }
+        .story p{
+            text-align: justify;
+        }        
+
+        .single-line-section {
+            background-color: #6b63ff;
+            display: flex;
+            justify-content: space-between; /* Distribute items evenly along the main axis */
+          }
+          
+          .single-line-section h4 {
+            margin: 0; /* Remove default margin */
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          
+          .single-line-section h4 span {
+            margin-left: 5px; /* Adjust spacing between text and colored span */
+          }
+          .review{
+            margin: 30px;
+            text-align: justify;
+          }
+    </style>
+</head>
+<body>
+    {% include 'partials/_header.html' %}
+    <div class="header">
+        <h1>{{data.title|title}}</h1>
+    </div>
+
+    <section class="movie-story">
+        <div class="split">
+            <div class="poster">
+                <img src="{{data.poster.url}}" height="auto" width="250px" alt="">
+            </div>
+    
+            <div class="story">
+                <h2>Story</h2>
+                <p>{{data.story}}</p><br><br>
+                <h3>Rating: <span style="color: gold;">{{data.rating}}</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="single-line-section">
+        <h4>Relaesed on: <span style="color: rgb(24, 224, 24);">{{data.release_date}}</span></h4>
+        <h4>Reviewed on: <span style="color: rgb(24, 224, 24);">{{data.reviewed_on}}</span></h4>
+    </section>
+
+    <section class="review">
+        <h2>Review</h2>
+        <p>{{data.review}}</p>
+    </section>
+
+    <section class="form">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="comment">
+        </form>
+    </section>
+
+    <h3>{{comments|length}} comments</h3>
+    <hr>
+    {% for i in comments %}
+    <h4>User: {{i.user}}</h4>
+    <h4>Date: {{i.comment_date}}</h4>
+    <h4>Rating: {{i.user_rating}}</h4>
+    <h4>Comment:</h4>
+    <p>{{i.comment}}</p>
+    <hr>
+    {% endfor %}
+</body>
+</html>

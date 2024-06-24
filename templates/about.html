@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Movie Review Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional inline styles can be added here */
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      {% include 'partials/_header.html' %}
+    </div>
+    <div class="container">
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Frontend Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+                <li><strong>Backend Technologies:</strong> Django, Python, SQLite3</li>
+            </ul>
+            <h2>Features</h2>
+            <ul>
+                <li>Movie Reviews</li>
+                <li>User Authentication</li>
+                <li>Search and Filter</li>
+                <li>Responsive Design</li>
+            </ul>
+            <h2>About the Technologies</h2>
+            <p><strong>HTML (HyperText Markup Language):</strong> HTML is used to structure web pages, providing the foundation for content on the internet.</p>
+            <p><strong>CSS (Cascading Style Sheets):</strong> CSS styles HTML elements, ensuring consistent and visually appealing presentation across different devices and screen sizes.</p>
+            <p><strong>JavaScript:</strong> JavaScript adds dynamic behavior to web pages, allowing for interactive elements and enhanced user experiences.</p>
+            <p><strong>Bootstrap:</strong> Bootstrap is a popular CSS framework that simplifies frontend development with pre-built components and responsive design utilities.</p>
+            <p><strong>Django:</strong> Django follows the "batteries-included" philosophy, providing a robust toolkit for building web applications, from database management to URL routing and template engines.</p>
+            <p><strong>Python:</strong> Python's readability and versatility make it ideal for backend development, handling business logic, data processing, and interfacing with databases.</p>
+            <p><strong>SQLite3:</strong> SQLite3 is a lightweight, serverless relational database management system, ideal for development environments and small to medium-scale applications.</p>
+            <h2>Our Mission</h2>
+            <p>We strive to deliver accurate and informative movie reviews while leveraging the latest technologies to ensure a smooth and enjoyable browsing experience for our users.</p>
+        </section>
+    </div>
+</body>
+</html>

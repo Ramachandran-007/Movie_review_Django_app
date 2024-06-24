@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovRev</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .homepage-body{
+        background-color: black;
+    }
+    /* banner */
+   
+    .banner{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner .fit{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    .banner .box{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .banner .box .heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .banner .box .heading h2{
+        font-size: 3em;
+        color: #fff;
+        letter-spacing: 2px;
+        width: 80%;
+    }
+    .banner .box .heading h5{
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 300;
+        padding: 1rem 0;
+    }
+    
+    .banner .box .heading p{
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: 300;
+        padding: 15px 0;
+        /* padding-bottom: 20px; */
+    }
+    
+    .banner:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        z-index: 1;
+        background: linear-gradient(to bottom,#000,transparent);
+    }
+    .banner:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        z-index: 1;
+        background: linear-gradient(to top,#000,transparent);
+    }
+
+    /* card */
+    .style-card h1{
+        font-size: 3rem;
+        padding: 1rem;
+        padding-left: 0;
+    }
+    
+    .style-card p{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .card{
+        border-top: 8px solid #111;
+        padding: 50px;
+        color: #fff;
+        position: relative;
+        display: inline-grid;
+        text-align: left;
+        align-items: center;
+        padding: 25px 100px 50px;
+    }
+    
+    .desc{
+        padding-left: 100px;
+    }
+    .card video{
+        position: relative;
+        top: -75px;
+        left: 125px;
+        height: 78%;
+        width: 60%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        z-index: -1;
+        /* margin-left: 15%; */
+    }
+    
+    .card img{
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    ::-webkit-scrollbar{
+        width: 0px;
+        background: transparent;
+    }
+
+</style>
+<body class="homepage-body">
+    <section>
+        {% include 'partials/_header.html' %}
+    </section>
+
+    <section class="banner">
+        <img src="{% static 'img/page-back.jpg' %}" alt="banner" class="fit"> 
+        <div class="box">
+            <div class="heading">
+                <h2><span style="color: red; ">Mov</span><span style="color: blue; ">Rev</span></h2>
+                <h5>Discover, Engage, and Share Your Passion for Movies</h5>
+                <p style="text-align: justify;">Welcome movie lovers to <span style="color: red; ">Mov</span><span style="color: blue; ">Rev</span>!, the ultimate destination for everything related to movies! Whether you're a casual moviegoer, a hardcore cinephile, or somewhere in between, you've come to the right place to satisfy your cinematic cravings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="style-card">
+        <div class="card">
+            <div class="desc">
+                <h1><span style="color: red; ">Mov</span><span style="color: blue; ">Rev</span></h1>
+                <p>where every movie is a window to boundless worlds and unforgettable stories</p>
+            </div>
+          <img src="{% static 'img/card.png' %}" alt="">
+          <video class="video" autoplay="" playsinline="" muted="" loop="">
+            <source src="{% static 'img/card-vid.m4v' %}" type="video/mp4">
+          </video>
+        </div>
+    </section>
+
+    <section>
+        {% include 'partials/_cards.html' %}
+    </section>
+</body>
+</html>

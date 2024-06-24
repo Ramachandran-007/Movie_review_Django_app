@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramachandran M D</title>
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/icon.png' %}">
+
+    <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+  </head>
+  <body>
+    <!-- header  -->
+     <div>
+        {% include 'partials/_header.html' %}
+     </div>
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home-container container grid">
+          <div class="home-content grid">
+            <div class="home-social">
+              <a
+                href="https://www.linkedin.com/in/rammd"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_officially_unavailable_"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/Ramachandran-007"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+            <div class="home-img">
+              <svg
+                class="home-blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home-blob-img"
+                    x="-15"
+                    y="-5"
+                    href="{% static 'img/img.svg' %}"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="home-data">
+              <h1 class="home-title">Hi, I am Ramachandran</h1>
+              <h3 class="home-subtitle">Python Fullstack Developer</h3>
+              <p class="home-description">
+                Crafting seamless digital experiences from server to client, a Python full-stack developer orchestrates the symphony of 
+                code to harmonize front-end elegance with back-end robustness.
+              </p>
+              <a href="#contact" class="button button-flex">
+                Contact Me <i class="fa-regular fa-envelope button-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home-scroll">
+            <a href="#about" class="home-scroll-button button-flex">
+              <!-- <i class="fa-solid fa-computer-mouse home-scroll-mouse"></i> -->
+              <img class="home-scroll-mouse" src="{% static 'img/mouse.svg' %}" alt="" />
+              <span class="home-scroll-name">Scroll down</span>
+              <i class="fa-solid fa-angles-down home-scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <span class="section-subtitle">My Introduction</span>
+
+        <div class="about-container container grid">
+          <img src="{% static 'img/aboutimg.png' %}" alt="" class="about-img" />
+
+          <div class="about-data">
+            <p class="about-description">
+              A Python full-stack developer is a versatile coding virtuoso adept at architecting end-to-end solutions. From sculpting responsive and visually engaging user interfaces on the front-end to engineering powerful and scalable server-side applications, 
+              they bring a holistic approach to web development. With a keen eye for design and a mastery of Python's backend prowess, these developers seamlessly blend creativity with technical excellence, crafting digital landscapes that deliver both aesthetic appeal and functional depth.
+            </p>
+
+        
+            <div class="about-buttons">
+              <a
+                download=""
+                href="{% static 'asset/Ram.pdf' %}"
+                class="button button-flex"
+              >
+                Download Resume<i
+                  class="fa-solid fa-file-arrow-down button-icon"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills and qualification  -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <span class="section-subtitle">My Technical Skills</span>
+        <div class="skills-content container">
+          <div class="skills-name">Python</div>
+          <div class="skills-name">Html</div>
+          <div class="skills-name">CSS</div>
+          <div class="skills-name">JavaScript</div>
+          <div class="skills-name">Bootstrap</div>
+          <div class="skills-name">SQL</div>
+          <div class="skills-name">MongoDB</div>
+          <div class="skills-name">Photoshop</div>
+        </div>
+      </section>
+      <section class="qualification section">
+        <h2 class="section-title">Qualification</h2>
+        <span class="section-subtitle">My journey</span>
+
+        <div class="qualification-container container">
+          <div class="qualification-tabs">
+            <div
+              class="qualification-button button-flex qualification-active"
+              data-target="#education"
+            >
+              <i class="fa-solid fa-graduation-cap qualification-icon"></i>
+              Education
+            </div>
+            <div class="qualification-button button-flex" data-target="#work">
+              <i class="fa-solid fa-briefcase qualification-icon"></i>
+              Intern
+            </div>
+          </div>
+
+          <div class="qualification-section">
+            <div
+              class="qualification-content qualification-active"
+              data-content
+              id="education"
+            >
+              <!-- qualifi 1 -->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">
+                    M. Sc. Computer Science
+                  </h3>
+                  <span class="qualification-subtitle">RVGAC Chengalpattu</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2022 - 2024
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 2 -->
+
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">
+                    Python Full Stack Development
+                  </h3>
+                  <span class="qualification-subtitle">Q-Spider</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2023 - 2024
+                  </div>
+                </div>
+              </div>
+
+              <!-- qualifi 3 -->
+
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">B. Sc. Computer Science</h3>
+                  <span class="qualification-subtitle">RVGAC Chengalpattu</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2019 - 2022
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <!--<span class="qualification-line"></span>-->
+                </div>
+              </div>
+            </div>
+
+            <!-- qualific content 2  -->
+            <div class="qualification-content" data-content id="work">
+              <!-- qualifi 1 -->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Web Developer</h3>
+                  <span class="qualification-subtitle">Skiez Technologies India Pvt Ltd</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2023
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 2 -->
+
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">Software Engineer Intern</h3>
+                  <span class="qualification-subtitle">HackerRank</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2023
+                  </div>
+                </div>
+              </div>
+
+              <!-- qualifi 3 -->
+
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Accenture - Forage Developer Virtual Experience Program</h3>
+                  <span class="qualification-subtitle">Developer</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2023
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <!-- <span class="qualification-line"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Projects</h2>
+        <span class="section-subtitle">Most recent work</span>
+
+        <div class="portfolio-container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- project1  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="{% static 'img/Project1.svg' %}" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Skiez Technologies</h3>
+                <p class="portfolio-description">
+                  Transforming visions into reality, Skiez Technologies India Pvt Ltd unveils its digital presence-a testament to cutting-edge development and technological prowess, ushering in a new era of innovation.
+                </p>
+                <a
+                  href="https://ramachandran-007.github.io/Skiez-Tech/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio-button"
+                  >Project Link
+                  <i class="fa-solid fa-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- project2  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="{% static 'img/Project2.svg' %}" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">David Security & Manpower Services</h3>
+                <p class="portfolio-description">
+                  Crafting digital excellence through a seamless blend of innovation and efficiency on my developer-centric platform.
+                </p>
+                <a
+                  href="https://ramachandran-007.github.io/Security-Manpower/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio-button"
+                  >Project Link
+                  <i class="fa-solid fa-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- project3  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="{% static 'img/Project3.svg' %}" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Python Projects</h3>
+                <p class="portfolio-description">
+                  Delivering precision and power through Python, our latest project stands as a testament to seamless functionality and code mastery, defining excellence in the world of programming.
+                </p>
+                <a
+                  href="https://github.com/Ramachandran-007/python_projects.git"
+                  target="_blank"
+                  class="button button-flex button-small portfolio-button"
+                  >Project Link
+                  <i class="fa-solid fa-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-angles">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-angle-right swiper-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-angle-left swiper-icon"></i>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- contact me  -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact me</h2>
+        <span class="section-subtitle">Get in touch</span>
+
+        <div class="contact-container container grid">
+          <div>
+            <div class="contact-info">
+              <i class="fa-regular fa-envelope contact-icon"></i>
+              <div>
+                <h3 class="contact-title">Email</h3>
+                <a
+                  href="mailto:ramachandran1840854@gmail.com"
+                  target="_blank"
+                  class="contact-subtitle"
+                  >ramachandran1840854gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-info">
+              <i class="fa-brands fa-linkedin-in contact-icon"></i>
+              <div>
+                <h3 class="contact-title">Linkedin</h3>
+                <a
+                  class="contact-subtitle"
+                  href="https://www.linkedin.com/in/rammd"
+                  target="_blank"
+                  >@rammd</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <footer class="footer">
+        <div class="footer-bg">
+          <div class="footer-container container grid">
+            <div>
+              <h1 class="footer-title">Ramachandran</h1>
+              <span class="footer-subtitle">Python Fullstack Developer</span>
+            </div>
+            <ul class="footer-links">
+              
+              <!--
+              <li>
+                <a href="#services" class="footer-link">Services</a>
+              </li>
+              -->
+
+              <li>
+                <a href="#portfolio" class="footer-link">Portfolio</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer-link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/in/rammd"
+                target="_blank"
+                class="footer-social"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/Ramachandran-007"
+                target="_blank"
+                target="_blank"
+                class="footer-social"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_officially_unavailable_"
+                target="_blank"
+                class="footer-social"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <p class="footer-copy">By M D Ram - PyPioHub</p>
+        </div>
+      </footer>
+    </main>
+
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-arrow-up scroll-up-icon"></i>
+    </a>
+    <script src="Libraries/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9b634c15bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+  </body>
+</html>
